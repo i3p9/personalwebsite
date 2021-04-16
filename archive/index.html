@@ -147,7 +147,324 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      
+      <style>
+    .projecttitle {
+        color: var(--global-text-color-light);
+        font-weight: bold;
+    }
+    .projectrest {
+        color: var(--global-text-color);
+        font-size: 18px;
+    }
+
+    .techused {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+    }
+
+    .a {
+        font-size: 18px;
+    }
+</style>
+
+<div class="port-title" style="font-weight: bold;">Archive</div>
+<div>
+  <table class="table table-borderless table-hover table-sm">
+    <thead style="color: var(--global-text-color)">
+      <tr>
+        <th scope="col">Project Title</th>
+        <th scope="col" class="d-none d-md-table-cell">Description</th>
+        <th scope="col" class="d-none d-md-table-cell">Tech Used</th>
+        <th scope="col">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="leftrad">
+          <p class="projecttitle">OC-ScanPolicy Generator</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">One page website for OC ScanPolicy Generator deployed in Vercel</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">JS</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/oc-scanpolicy" style="font-size: 16px" target="_blank">Github</a><br />
+            <a href="https://oc-scanpolicy.vercel.app" style="font-size: 16px" target="_blank">WebApp</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Reach</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">WiFi Channel Analyzer made using Python. (macOS only for now)</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Python</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/reach" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+          <tr>
+        <td class="leftrad">
+          <p class="projecttitle">mac-setup</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">Compresensive guide to automate a new macOS installation</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">JS Docsify</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/mac-setup" style="font-size: 16px" target="_blank">Github</a><br />
+          <a href="https://mac-setup.vercel.app/" style="font-size: 16px" target="_blank">Website</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">QA Website</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">A simple Question/Answers Website made using Laravel</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Laravel</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/laravel-qa-new" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Pizzahouse</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">Pizza ordering and managing website made using Laravel</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Laravel</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/pizzahouse" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Edushare V2</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">revamped version of the previous Edushare website. Made for learning and teaching</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">PHP JS</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/Edusharev2" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Instagram Clone</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">Instagram App clone made in Android Studio and Firebase</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Java Firebase</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/InstaNot" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="leftrad">
+          <p class="projecttitle">QA Website</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">A simple Question/Answers Website made using Laravel</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Laravel</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/laravel-qa-new" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Deepfake Detection with Xception</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">Detecting Deepfake videos via custom Xception</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Python</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/deepfake-detection-with-xception" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Fun2Text: Chrome Extesnion</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">An chrome extension to replace certain texts over all website, highly confgureable.</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">JS</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/oc-scanpolicy" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Python Scripts</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">Collection of Python scripts I've been using throughout all my projects</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Python</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/python-scripts" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">VSCode Essential Pack</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">First attempt at creating VSCode Extension. An essential pack.</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">VSCode</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/vscode-essential-pack" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Last2Imgur: Alfred Workflow</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">Alfred Workflow made to upload the last screenshot to Imgur and copy the link</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Alfred Bash</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/alfred-last2imgur" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Custom Remote for Unified Remote</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">A very custom remote made for Unified Remote for entering mutliple values at once</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Python Lua</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/unified-remote-custom" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">USBMap for MSI Z97 Gaming5</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">A custom SSDT for MSI Z97 Motherboard made using USBMap</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Python Kext</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/oc-scanpolicy" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Edushare</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">Initial version of Edushare, a learning website.</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">HTML CSS PHP</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/edushare" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Custom HiDPI Resolution for Mac</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">A guide to create a custom HiDPI Resolution on macOS, useful when<br /> using an external monitor</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">HTML CSS</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/oc-scanpolicy" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">OCR 2 Google</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">A tool to Capture screenshot, ocr it using tessaract and then google the keywords,
+          <br />used mainly in quiz applications but very configureable</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">Python Bash</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/ocr2google" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">Pebble Watchface Minimal</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">A minimal and very simple watchface made using pebble sdk</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">C</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/pebble-watchface-minimal" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+            <tr>
+        <td class="leftrad">
+          <p class="projecttitle">SteamlinkFix</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="projectrest">JS Script made to modify elements on steamcommunity page</p>
+        </td>
+        <td class="d-none d-md-table-cell">
+          <p class="techused">JS</p>
+        </td>
+        <td class="rightrad">
+          <a href="https://github.com/i3p9/Steamlinkfix" style="font-size: 16px" target="_blank">Github</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
     </div>
 
