@@ -1,7 +1,8 @@
 /******************************************************************************* Variables used throughout the theme. To adjust anything, simply edit the variables below and rebuild the theme. */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap");
-:root { --global-bg-color: #0a192f; --global-code-bg-color: #233554; --global-text-color: #a8b2d1; --global-text-color-light: #ccd6f6; --global-theme-color: #64ffda; --global-hover-color: #64ffda; --global-footer-bg-color: #e8e8e8; --global-footer-text-color: #424242; --global-footer-link-color: #000000; --global-distill-app-color: #e8e8e8; }
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+:root { --global-bg-color: #0a192f; --global-code-bg-color: #233554; --global-text-color: #a8b2d1; --global-text-color-light: #ccd6f6; --global-theme-color: #ff6363; --global-hover-color: #ff6363; --global-footer-bg-color: #e8e8e8; --global-footer-text-color: #424242; --global-footer-link-color: #000000; --global-distill-app-color: #e8e8e8; }
 
 /****************************************************************************** Content */
 html, body { padding-bottom: 70px; color: var(--global-text-color); background-color: var(--global-bg-color); height: 100%; margin: 0; }

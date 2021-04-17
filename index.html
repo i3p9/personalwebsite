@@ -10,50 +10,36 @@
 <meta name="description" content="Website for Fahim Faisal
 ">
 
-<!-- Open Graph -->
-
-
-<!-- Bootstrap & MDB -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" /> -->
 
-<!-- Fonts & Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 <link rel="preload" href="/assets/fonts/Calibre/Calibre-Light.woff" as="font" crossorigin="anonymous" />
 <link rel="preload" href="/assets/fonts/Calibre/Calibre-Semibold.woff" as="font" crossorigin="anonymous" />
 
-<!-- Code Syntax Highlighting -->
-<link rel="stylesheet" href="https://gitcdn.xyz/repo/jwarby/jekyll-pygments-themes/master/github.css" />
-
-<!-- Styles -->
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/jwarby/jekyll-pygments-themes/master/zenburn.css" />
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
-
 <link rel="stylesheet" href="/assets/css/main.css">
 
 <link rel="canonical" href="/">
 
-<!-- JQuery-->
-<!-- jQuery-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
 
 
-<!-- Theming-->
 
 
   </head>
   <body class="fixed-top-nav sticky-bottom-footer">
     <div class="wrapper">
 
-    <!-- Header -->
-
     <style>
   .button {
     background-color: transparent; /* Green */
-    border: 1px solid #64ffda;
-    color: #64ffda;
+    border: 1px solid var(--global-theme-color);
+    color: var(--global-theme-color);
     font-family: 'JetBrains Mono', monospace;
     padding: 1px 17px;
     text-align: justify;
@@ -64,7 +50,7 @@
     cursor: pointer;
   }
   .button:hover {
-    background-color: #64ffda;
+    background-color: var(--global-theme-color);
     color: black;
   }
 
@@ -74,11 +60,11 @@
 
 <header>
 
-    <!-- Nav Bar -->
+    <!-- NavBar -->
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
-        <!-- Social Icons -->
+        <!-- Social -->
         <div class="navbar-brand social">
           <a href="mailto:%73%70%68%69%6E%63%6F%6E%65@%67%6D%61%69%6C.%63%6F%6D"><i class="fas fa-envelope"></i></a>&nbsp; &nbsp;
 <a href="https://github.com/i3p9" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>&nbsp; &nbsp;
@@ -87,7 +73,7 @@
 
         </div>
       
-      <!-- Navbar Toggle -->
+      <!-- Navbartoggle -->
       <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar top-bar"></span>
@@ -143,11 +129,8 @@
       </div>
     </div>
   </nav>
-
 </header>
 
-
-    <!-- Content -->
 
     <div class="container mt-5">
       <style>
@@ -182,13 +165,21 @@
   width: 100%;
   height: 100%;
   border-radius: 12px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to left,
     hsl(166deg 100% 16%) 0%,
     hsl(166deg 100% 32%) 8%,
     hsl(166deg 100% 32%) 92%,
     hsl(166deg 100% 16%) 100%
+  ); */
+  background: linear-gradient(
+    to left,
+    hsl(0deg 100% 62%) 0%,
+    hsl(0deg 100% 62%) 8%,
+    hsl(0deg 100% 62%) 92%,
+    hsl(0deg 100% 62%) 100%
   );
+
 }
 .front {
   display: block;
@@ -197,7 +188,8 @@
   border-radius: 12px;
   font-size: 1.25rem;
   color: black;
-  background: hsl(166deg 100% 70%);
+  /* background: hsl(166deg 100% 70%); */
+  background: hsl(0deg 100% 69%);
   will-change: transform;
   transform: translateY(-4px);
   transition:
@@ -205,8 +197,9 @@
     600ms
     cubic-bezier(.3, .7, .4, 1);
 }
-.pushable:hover {
+.pushable:hover +.handwriting{
   filter: brightness(100%);
+  display: block;
 }
 .pushable:hover .front {
   transform: translateY(-6px);
@@ -233,15 +226,27 @@
 .pushable:focus:not(:focus-visible) {
   outline: none;
 }
+
+.handwriting {
+  display: none;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1rem;
+  margin-left: 90px;
+  line-height: 18px;
+}
+
+.copied {
+  display: none;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1rem;
+  margin-left: 90px;
+  line-height: 25px;
+}
 </style>
+
 <div class="post">
 
   <article>
-    <!--
-    <div class="profile float-right">
-        <img class="img-fluid z-depth-1 rounded" src="/assets/img/undraw_counting_stars_rrnl.svg">
-    </div>
-    -->
     <div class="clearfix">
       <div class="name-color">
 Hello, I am</div>
@@ -256,43 +261,86 @@ Fahim Faisal</div>
 </div>
 
     </div>
-    <!--
-    
-    
-    -->
-    <button class="pushable">
+    <button class="btn show-tt pushable" data-clipboard-text="sphincone@gmail.com" id="fancybutton">
       <span class="shadow"></span>
       <span class="edge"></span>
       <span class="front">
         sphincone@gmail.com
       </span>
     </button>
+    <div class="handwriting" id="copytext">
+      &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="36" height="24"  stroke="#a8b2d1" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd" stroke-width="2"><path d="M34 13.5q-26 5-22.5-11m-7 10l6.5-10"/><path d="M20 9l-8.5-6.5"/></svg> tap to copy <br>
+    </div>
+    <div class="copied" id="copiedtext">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;copied!
+    </div>
+
+
+    <script src="/assets/js/clipboard.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+var clipboard = new ClipboardJS('.btn');
+
+clipboard.on('success', function (e) {
+  console.log(e);
+  console.info('Text:', e.text);
+  console.info('Trigger:', e.trigger);
+  e.clearSelection();
+  });
+
+clipboard.on('error', function (e) {
+  console.log(e);
+  });
+
+var link = document.getElementById('fancybutton');
+link.addEventListener('click', editContent);
+var txt = document.getElementById('copiedtext');
+var diag = document.getElementById('copytext');
+
+function editContent() {
+  if(txt.style.display === "none"){
+    txt.style.display = "block";
+    diag.style.display = "none"
+    setTimeout(function(){
+    txt.style.display = "none";
+    diag.style.display = "block"
+},800);
+  } else{
+    txt.style.display = "none";
+  }
+}
+
+window.onload = function (){
+  txt.style.display = "none";
+};
+    </script>
 
   </article>
 
 </div>
 
+
     </div>
 
-    <!-- Footer -->
     <div class="push"></div>
   </div>
 
     <footer class="footer">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#64ffda" fill-opacity="1" d="M0,96L10.9,90.7C21.8,85,44,75,65,69.3C87.3,64,109,64,131,96C152.7,128,175,192,196,208C218.2,224,240,192,262,154.7C283.6,117,305,75,327,58.7C349.1,43,371,53,393,64C414.5,75,436,85,458,85.3C480,85,502,75,524,64C545.5,53,567,43,589,80C610.9,117,633,203,655,218.7C676.4,235,698,181,720,138.7C741.8,96,764,64,785,64C807.3,64,829,96,851,101.3C872.7,107,895,85,916,101.3C938.2,117,960,171,982,165.3C1003.6,160,1025,96,1047,74.7C1069.1,53,1091,75,1113,85.3C1134.5,96,1156,96,1178,106.7C1200,117,1222,139,1244,138.7C1265.5,139,1287,117,1309,112C1330.9,107,1353,117,1375,133.3C1396.4,149,1418,171,1429,181.3L1440,192L1440,320L1429.1,320C1418.2,320,1396,320,1375,320C1352.7,320,1331,320,1309,320C1287.3,320,1265,320,1244,320C1221.8,320,1200,320,1178,320C1156.4,320,1135,320,1113,320C1090.9,320,1069,320,1047,320C1025.5,320,1004,320,982,320C960,320,938,320,916,320C894.5,320,873,320,851,320C829.1,320,807,320,785,320C763.6,320,742,320,720,320C698.2,320,676,320,655,320C632.7,320,611,320,589,320C567.3,320,545,320,524,320C501.8,320,480,320,458,320C436.4,320,415,320,393,320C370.9,320,349,320,327,320C305.5,320,284,320,262,320C240,320,218,320,196,320C174.5,320,153,320,131,320C109.1,320,87,320,65,320C43.6,320,22,320,11,320L0,320Z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--global-theme-color)" fill-opacity="1" d="M0,96L10.9,90.7C21.8,85,44,75,65,69.3C87.3,64,109,64,131,96C152.7,128,175,192,196,208C218.2,224,240,192,262,154.7C283.6,117,305,75,327,58.7C349.1,43,371,53,393,64C414.5,75,436,85,458,85.3C480,85,502,75,524,64C545.5,53,567,43,589,80C610.9,117,633,203,655,218.7C676.4,235,698,181,720,138.7C741.8,96,764,64,785,64C807.3,64,829,96,851,101.3C872.7,107,895,85,916,101.3C938.2,117,960,171,982,165.3C1003.6,160,1025,96,1047,74.7C1069.1,53,1091,75,1113,85.3C1134.5,96,1156,96,1178,106.7C1200,117,1222,139,1244,138.7C1265.5,139,1287,117,1309,112C1330.9,107,1353,117,1375,133.3C1396.4,149,1418,171,1429,181.3L1440,192L1440,320L1429.1,320C1418.2,320,1396,320,1375,320C1352.7,320,1331,320,1309,320C1287.3,320,1265,320,1244,320C1221.8,320,1200,320,1178,320C1156.4,320,1135,320,1113,320C1090.9,320,1069,320,1047,320C1025.5,320,1004,320,982,320C960,320,938,320,916,320C894.5,320,873,320,851,320C829.1,320,807,320,785,320C763.6,320,742,320,720,320C698.2,320,676,320,655,320C632.7,320,611,320,589,320C567.3,320,545,320,524,320C501.8,320,480,320,458,320C436.4,320,415,320,393,320C370.9,320,349,320,327,320C305.5,320,284,320,262,320C240,320,218,320,196,320C174.5,320,153,320,131,320C109.1,320,87,320,65,320C43.6,320,22,320,11,320L0,320Z"></path></svg>
 </footer>
 
 
   </body>
-  <!-- Bootsrap & MDB scripts -->
+  <!--scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
 
   
 
-
-<!-- Load Common JS -->
 <script src="/assets/js/common.js"></script>
 
 
