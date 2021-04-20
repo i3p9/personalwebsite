@@ -52,13 +52,14 @@
     font-size: 17px;
     margin: 10px 10px;
     cursor: pointer;
+    border-radius: 8px;
+    transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
   }
   .button:hover {
     background-color: var(--global-theme-color);
     color: black;
   }
 
-  .button3 {border-radius: 8px;}
 </style>
 
 <header>
@@ -123,7 +124,7 @@
           </li>
           
           
-          <a href="../assets/pdf/fahim_cv.pdf" class="button button3" target="_blank">resume</a>
+          <a href="../assets/pdf/fahim_cv.pdf" class="button nohover" target="_blank">resume</a>
           <!-- 
             <div class = "toggle-container">
               <a id = "light-toggle">

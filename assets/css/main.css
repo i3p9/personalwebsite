@@ -61,7 +61,17 @@ a.nohover:before { content: ""; position: absolute; bottom: 0; left: 0; right: 0
 
 a.nohover:hover:before { -webkit-transform-origin: bottom left; transform-origin: bottom left; -webkit-transform: scaleX(1); transform: scaleX(1); }
 
-.name { color: var(--global-text-color-light); font-family: "calibre-semibold", sans-serif; font-size: 7rem; }
+.name { color: var(--global-text-color-light); font-family: "calibre-semibold", sans-serif; font-size: 7rem; white-space: nowrap; overflow: hidden; border-right: solid 0.2ch var(--global-text-color-light); width: 10.5ch; }
+
+.name { animation: animated-text 2s linear .5s 1 normal both, animated-cursor 1s linear infinite; }
+
+/* text animation */
+@keyframes animated-text { from { width: 0; }
+  to { width: 10.5ch; } }
+
+/* cursor animations */
+@keyframes animated-cursor { from { border-right-color: var(--global-text-color-light); }
+  to { border-right-color: transparent; } }
 
 .name-color { color: var(--global-theme-color); font-family: 'IBM Plex Mono', monospace; font-weight: 400; font-size: 20px; }
 
@@ -169,13 +179,9 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
 
 .card-techused { color: var(--global-text-color-light); font-family: 'IBM Plex Mono', monospace; font-weight: 400; font-size: 1rem; word-spacing: .1em; opacity: .4; }
 
-.button-project { background-color: transparent; /* Green */ border: 1px solid var(--global-theme-color); color: var(--global-theme-color); font-family: 'Roboto Mono', monospace; padding: 1px 17px; text-align: justify; text-decoration: none; display: inline-block; font-size: 17px; margin: 10px 10px; cursor: pointer; }
+.button-project { background-color: transparent; /* Green */ border: 1px solid var(--global-theme-color); color: var(--global-theme-color); font-family: 'IBM Plex Mono', monospace; padding: 1px 17px; text-align: justify; text-decoration: none; display: inline-block; font-size: 17px; margin: 10px 10px; cursor: pointer; border-radius: 8px; }
 
 .button-project:hover { background-color: var(--global-theme-color); color: black; }
-
-.button1 { border-radius: 8px; }
-
-.button2 { border-radius: 12px; }
 
 .port-title { color: var(--global-theme-color); font-size: 32px; font-family: "calibre", sans-serif; font-weight: bold; margin: 0 0 20px; text-shadow: 0 1px 5px var(--link-shadow6); }
 

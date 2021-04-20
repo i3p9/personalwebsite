@@ -52,13 +52,14 @@
     font-size: 17px;
     margin: 10px 10px;
     cursor: pointer;
+    border-radius: 8px;
+    transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
   }
   .button:hover {
     background-color: var(--global-theme-color);
     color: black;
   }
 
-  .button3 {border-radius: 8px;}
 </style>
 
 <header>
@@ -126,7 +127,7 @@
           </li>
           
           
-          <a href="../assets/pdf/fahim_cv.pdf" class="button button3" target="_blank">resume</a>
+          <a href="../assets/pdf/fahim_cv.pdf" class="button nohover" target="_blank">resume</a>
           <!-- 
             <div class = "toggle-container">
               <a id = "light-toggle">
@@ -276,8 +277,8 @@
       <div class="name-color">
 Hello, I am</div>
 
-<div class="name">
-Fahim Faisal</div>
+<div class="name" id="typename">
+&gt; Fahim Faisal</div>
 <div class="about">
 <p>I'm a software engineer from Dhaka, Bangladesh. I like building things with Python and JS + its frameworks.</p>
 <p>My hobbies includes Space, <a href="https://open.spotify.com/user/sphincone">making playlists</a> and taking <a href="https://instagram.com/fahimthetwit">pictures</a>. I also like comedy shows and I'm a big fan of SNL.</p>
