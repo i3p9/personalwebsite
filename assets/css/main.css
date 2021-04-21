@@ -83,6 +83,10 @@ a.nohover:hover:before { -webkit-transform-origin: bottom left; transform-origin
 
 ::selection { color: var(--global-text-color-light); /* needs to be set as global for light mode */ background: var(--global-code-bg-color); }
 
+.skip-link { position: absolute; top: -40px; left: 0; background: #000000; color: white; padding: 8px; z-index: 100; }
+
+.skip-link:focus { top: 0; }
+
 .profile { margin-left: 1rem; width: 100%; }
 
 .profile .address { margin-bottom: 5px; margin-top: 5px; font-family: monospace; font-size: 1.2rem; }

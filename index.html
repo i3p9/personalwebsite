@@ -48,7 +48,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
 
-<link rel="canonical" href="/">
+<link rel="canonical" href="https://fahim.vercel.app">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
@@ -72,10 +72,10 @@
       
         <!-- Social -->
         <div class="navbar-brand social">
-          <a href="mailto:%73%70%68%69%6E%63%6F%6E%65@%67%6D%61%69%6C.%63%6F%6D"><i class="fas fa-envelope"></i></a>&nbsp; &nbsp;
-<a href="https://github.com/i3p9" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>&nbsp; &nbsp;
-<a href="https://www.linkedin.com/in/ffai" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>&nbsp; &nbsp;
-<a href="https://twitter.com/fahimthetwit" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>&nbsp;
+          <a href="mailto:%73%70%68%69%6E%63%6F%6E%65@%67%6D%61%69%6C.%63%6F%6D" aria-label="Email" rel="noreferrer"><i class="fas fa-envelope"></i></a>&nbsp; &nbsp;
+<a href="https://github.com/i3p9" aria-label="Github" target="_blank" rel="noreferrer" title="GitHub"><i class="fab fa-github"></i></a>&nbsp; &nbsp;
+<a href="https://www.linkedin.com/in/ffai" aria-label="LinkedIn" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>&nbsp; &nbsp;
+<a href="https://twitter.com/fahimthetwit" aria-label="Twitter" target="_blank" rel="noreferrer" title="Twitter"><i class="fab fa-twitter"></i></a>&nbsp;
 
         </div>
       
@@ -86,7 +86,7 @@
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
       </button>
-      <div class="collapse navbar-collapse text-right" id="navbarNav">
+      <div class="collapse navbar-collapse text-right" id="navbarNav" role="navigation">
         <ul class="navbar-nav ml-auto flex-nowrap">
           <!-- About -->
           <li class="nav-item active">
@@ -275,13 +275,15 @@
 <div class="post">
 
   <article>
-    <div class="clearfix">
-      <div class="name-color">
+    <div class="clearfix" id="about">
+      <p><a class="skip-link" href="#maincontent">Skip to main</a></p>
+
+<div class="name-color">
 Hello, I am</div>
 
 <div class="name" id="typename">
-&gt; Fahim Faisal</div>
-<div class="about">
+<h1 class="name">&gt; Fahim Faisal</h1></div>
+<div class="about" role="main" id="maincontent">
 <p>I'm a software engineer from Dhaka, Bangladesh. I like building things with Python and JS + its frameworks.</p>
 <p>My hobbies includes Space, <a href="https://open.spotify.com/user/sphincone">making playlists</a> and taking <a href="https://instagram.com/fahimthetwit">pictures</a>. I also like comedy shows and I'm a big fan of SNL.</p>
 <p>Currently I'm looking for work and prototyping cool stuffs on my own.</p>
@@ -292,7 +294,7 @@ Hello, I am</div>
     <button class="btn show-tt pushable" data-clipboard-text="sphincone@gmail.com" id="fancybutton">
       <span class="shadow"></span>
       <span class="edge"></span>
-      <span class="front">
+      <span class="front" id="emailbutton" role="button">
         sphincone@gmail.com
       </span>
     </button>
