@@ -97,6 +97,10 @@ a.nohover:hover:before { -webkit-transform-origin: bottom left; transform-origin
 
 .post-description a:hover { color: var(--global-theme-color); text-decoration: none; }
 
+.button-resume { background-color: transparent; /* Green */ border: 1px solid var(--global-theme-color); color: var(--global-theme-color); font-family: 'JetBrains Mono', monospace; padding: 1px 10px; text-align: justify; text-decoration: none; display: inline-block; font-size: 17px; margin: 10px 10px; cursor: pointer; border-radius: 8px; transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out; }
+
+.button-resume:hover { background-color: var(--global-theme-color); color: black; }
+
 .navbar { box-shadow: none; border-bottom: 0px solid #e8e8e8; background-color: var(--global-bg-color); opacity: 0.95; }
 
 .navbar.navbar-light a:hover { text-decoration: none; }
